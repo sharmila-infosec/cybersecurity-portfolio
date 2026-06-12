@@ -19,6 +19,7 @@ network security, and compliance frameworks.
 | Project | Description | Skills |
 |---------|-------------|--------|
 | [Botium Toys Internal Security Audit](security-audits/botium-toys-audit.md) | Internal IT audit using NIST CSF framework | Risk Assessment, PCI DSS, GDPR, SOC |
+| [Security Risk Assessment Report](security-risk-assessment-report.pdf) | Recommended hardening methods (MFA, password policy, firewall config) to reduce organizational security risk | Risk Assessment, Network Hardening, Access Control |
 
 ---
 
@@ -31,3 +32,5 @@ network security, and compliance frameworks.
 - Linux (in progress)
 - SQL (in progress)
 - Network Security (in progress)
+- - Network Hardening
+- Risk Mitigation
