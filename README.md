@@ -20,7 +20,7 @@ network security, and compliance frameworks.
 |---------|-------------|--------|
 | [Botium Toys Internal Security Audit](security-audits/botium-toys-audit/botium-toys-audit.md) | Internal IT audit using NIST CSF framework | Risk Assessment, PCI DSS, GDPR, SOC |
 | [Security Risk Assessment Report](security-audits/security-risk-assessment/security-risk-assessment-report.md) | Recommended hardening methods (MFA, password policy, firewall config) to reduce organizational security risk | Risk Assessment, Network Hardening, Access Control |
-| incident-reports/cybersecurity-incident-report-1/network-traffic-analysis.md
+| [Network Traffic Analysis — DNS/ICMP Incident Report](incident-reports/cybersecurity-incident-report-1/network-traffic-analysis.md) | Analyzed tcpdump logs to identify a DNS/UDP port 53 failure causing a website outage | Network Traffic Analysis, tcpdump, DNS, ICMP, TCP/IP |
 ---
 
 ## Skills
