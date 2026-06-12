@@ -27,7 +27,6 @@ network security, and compliance frameworks.
 
 | Project | Description | Skills |
 |---------|--------------|---------|
-| [Network Traffic Analysis...
 | [Network Traffic Analysis — DNS/ICMP Incident Report](incident-reports/network-traffic-analysis/network-traffic-analysis.md) | Analyzed tcpdump logs to identify a DNS/UDP port 53 failure causing a website outage | Network Traffic Analysis, tcpdump, DNS, ICMP, TCP/IP |
 | [Website Compromise — Brute Force Attack](incident-reports/website-compromise-brute-force/security-incident-report.md) | Investigated a website compromise where a brute-force attack led to malware distribution via a malicious redirect | Incident Response, Malware Analysis, DNS/HTTP Analysis, MFA Recommendations |
 | [SYN Flood DoS Attack](incident-reports/syn-flood-dos-attack/cybersecurity-incident-report-2.md) | Identified a TCP SYN flood DoS attack causing website downtime, with analysis of the TCP handshake and mitigation recommendations | TCP/IP Analysis, DoS Attack Identification, Network Log Analysis |
