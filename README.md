@@ -40,6 +40,9 @@ network security, and compliance frameworks.
 - GDPR Compliance
 - Linux (in progress)
 - SQL (in progress)
-- Network Security (in progress)
+- Network Security 
 - Network Hardening
 - Risk Mitigation
+- Malware Analysis
+- TCP/IP Protocol Analysis
+- DoS/DDoS Attack Identification
