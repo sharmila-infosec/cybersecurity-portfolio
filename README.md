@@ -32,5 +32,5 @@ network security, and compliance frameworks.
 - Linux (in progress)
 - SQL (in progress)
 - Network Security (in progress)
-- - Network Hardening
+- Network Hardening
 - Risk Mitigation
