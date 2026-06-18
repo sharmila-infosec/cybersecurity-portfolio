@@ -19,5 +19,5 @@ In this project, I used SQL queries to investigate security-related events and i
 ## Files
 
 - Apply filters to SQL queries.pdf
-
+- 
 This project demonstrates how SQL filtering techniques can be used to investigate login activity and identify systems that require security updates.
