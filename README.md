@@ -208,3 +208,34 @@ Exploring professional cybersecurity organizations and aligning career interests
 **Master of Science in Information Technology Management**
 Campbellsville University, Kentucky — May 2025
 
+
+---
+
+## 📜 Certifications (Detailed)
+
+### 🏆 Google Cybersecurity Professional Certificate
+**Issuer:** Google / Coursera | **Completed:** June 23, 2026
+**Verify:** [https://coursera.org/verify/professional-cert/IQPPA9JH9QHM](https://coursera.org/verify/professional-cert/IQPPA9JH9QHM)
+
+A 9-course program covering hands-on, practice-based cybersecurity skills for entry-level roles.
+
+| # | Course | Date | Verify |
+|---|--------|------|--------|
+| 1 | [Foundations of Cybersecurity](certifications/google-cybersecurity-professional/course-certificates/01_Foundations_of_Cybersecurity.pdf) | Jun 2, 2026 | [Link](https://coursera.org/verify/DA3RB2L6ZMT1) |
+| 2 | [Play It Safe: Manage Security Risks](certifications/google-cybersecurity-professional/course-certificates/02_Play_It_Safe_Manage_Security_Risks.pdf) | Jun 5, 2026 | [Link](https://coursera.org/verify/T0MN2XS5NGPI) |
+| 3 | [Connect and Protect: Networks and Network Security](certifications/google-cybersecurity-professional/course-certificates/03_Connect_and_Protect_Networks_and_Network_Security.pdf) | Jun 12, 2026 | [Link](https://coursera.org/verify/H0XDAAJVAICO) |
+| 4 | [Tools of the Trade: Linux and SQL](certifications/google-cybersecurity-professional/course-certificates/04_Tools_of_the_Trade_Linux_and_SQL.pdf) | Jun 18, 2026 | [Link](https://coursera.org/verify/E9PQY1IXDOUF) |
+| 5 | [Assets, Threats, and Vulnerabilities](certifications/google-cybersecurity-professional/course-certificates/05_Assets_Threats_and_Vulnerabilities.pdf) | Jun 18, 2026 | [Link](https://coursera.org/verify/W3JBPB8Q0QJS) |
+| 6 | [Sound the Alarm: Detection and Response](certifications/google-cybersecurity-professional/course-certificates/06_Sound_the_Alarm_Detection_and_Response.pdf) | Jun 19, 2026 | [Link](https://coursera.org/verify/5QX8GLFU1K2L) |
+| 7 | [Automate Cybersecurity Tasks with Python](certifications/google-cybersecurity-professional/course-certificates/07_Automate_Cybersecurity_Tasks_with_Python.pdf) | Jun 23, 2026 | [Link](https://coursera.org/verify/3O442V05SUTS) |
+| 8 | [Put It to Work: Prepare for Cybersecurity Jobs](certifications/google-cybersecurity-professional/course-certificates/08_Put_It_to_Work_Prepare_for_Cybersecurity_Jobs.pdf) | Jun 23, 2026 | [Link](https://coursera.org/verify/HXNSTBD5HEK2) |
+
+---
+
+### 🏅 ThinkCloudly SOC Bootcamp
+**Issuer:** ThinkCloudly | **Completed:** May 23, 2026
+**Certificate No:** TC-052026-Y79JF79-30187
+**Duration:** 5 Hours (5 CPE Credits)
+
+[View Certificate](certifications/thinkcloudly-soc-bootcamp/ThinkCloudly_SOC_Bootcamp_Certificate.pdf)
+
