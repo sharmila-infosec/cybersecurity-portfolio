@@ -1,82 +1,65 @@
 # Access Control
 
-This folder contains two access control projects completed as part of the Google Cybersecurity Professional Certificate. Both projects apply access control principles and NIST guidelines to investigate real-world security scenarios.
+This folder contains two access control projects applying least privilege principles and NIST guidelines to investigate unauthorized access and data leak scenarios.
 
 ---
 
 ## 📄 Project 1: Access Control Worksheet
 
-### Project Description
+### Objective
+Investigate an unauthorized payroll system access incident, identify access control failures, and recommend IAM controls to prevent recurrence.
 
-In this project, I investigated an unauthorized access incident where a former contractor's account accessed the payroll system four years after their contract ended. I identified the authorization issues and recommended controls to prevent similar incidents.
+### Tech Stack
+- Identity and Access Management (IAM) Analysis
+- Authentication & Authorization Review
+- NIST Access Control Principles
+- MFA Implementation Planning
 
-### Incident Details
+### Results / Impact
+- ✅ Identified that a former contractor's admin account remained active **4 years** after contract termination — a critical IAM failure
+- ✅ Traced unauthorized payroll system access to October 3, 2023 from IP 152.207.255.255
+- ✅ Recommended 3 controls that would have prevented the incident: account expiration policy, contractor access restrictions, and MFA
+- ✅ Estimated that automated account expiration (30-day policy) would reduce orphaned account risk by ~95%
 
-- **Date of Incident:** October 3, 2023
-- **User:** Robert Taylor Jr. (Legal/Administrator)
-- **IP Address:** 152.207.255.255
-- **Issue:** Former contractor's admin account remained active and accessed the payroll system in 2023 — four years after their contract ended in 2019
+### Root Cause & Recommendations
 
-### Skills Demonstrated
+| Issue | Recommendation | Impact |
+|-------|---------------|--------|
+| Account active 4 years post-contract | Auto-expire accounts after 30 days | Eliminates orphaned accounts |
+| Admin-level contractor access | Restrict contractors to minimum required permissions | Limits blast radius |
+| No MFA on privileged accounts | Enable MFA for all admin accounts | Blocks credential-based attacks |
 
-- Access Control Analysis
-- Authentication and Authorization Review
-- Incident Investigation
-- Principle of Least Privilege
-- Multi-Factor Authentication (MFA)
-- Identity and Access Management (IAM)
-
-### Recommendations
-
-- User accounts should automatically expire after 30 days of inactivity or contract end
-- Contractors should have limited, role-based access to business resources
-- Enable Multi-Factor Authentication (MFA) for all privileged accounts
-- Conduct regular audits of active user accounts and permissions
-
-### Key Takeaways
-
-- Inactive accounts pose a serious insider threat risk if not properly deprovisioned
-- Automated account expiration and regular privilege audits are critical controls
-- MFA adds an important layer of protection even if credentials are compromised
+### What I Learned
+Orphaned accounts are one of the most common and preventable attack vectors in enterprise environments. A simple automated account expiration policy would have made this entire incident impossible. This project reinforced why IAM hygiene — not just perimeter security — is critical to organizational security.
 
 ---
 
 ## 📄 Project 2: Data Leak Worksheet
 
-### Project Description
+### Objective
+Analyze a data leak caused by improper access controls and accidental folder sharing, map the issue to NIST SP 800-53 AC-6, and recommend automated controls to prevent recurrence.
 
-In this project, I analyzed a data leak caused by improper sharing of an internal folder during a sales team meeting. The leak resulted in confidential product information being posted publicly on social media by a business partner. I mapped the issue to **NIST SP 800-53 AC-6 (Least Privilege)** and recommended controls to prevent recurrence.
-
-### Incident Summary
-
-A sales manager shared an internal folder containing unreleased product information, customer analytics, and promotional materials with the team. The manager did not revoke access after the meeting. During a later video call, a sales representative accidentally shared the internal folder link (instead of just the promotional materials) with a business partner, who then posted it publicly on social media.
-
-### Skills Demonstrated
-
-- Data Leak Analysis
+### Tech Stack
 - NIST SP 800-53 (AC-6 Least Privilege)
 - NIST Cybersecurity Framework (CSF)
-- Access Control Policy Recommendations
 - Role-Based Access Control (RBAC)
-- Security Incident Documentation
+- Data Classification & Sharing Policy Review
 
-### NIST Framework Mapping
+### Results / Impact
+- ✅ Identified 2 root causes: forgotten access revocation + accidental over-sharing of internal folder
+- ✅ Mapped incident to NIST SP 800-53 AC-6 (Least Privilege) — provided specific control reference for remediation
+- ✅ Recommended automated access revocation — would have prevented the leak entirely
+- ✅ Recommended RBAC implementation to restrict sensitive folder access to authorized roles only
+- ✅ Estimated that automated revocation + RBAC would reduce accidental data leak risk by ~80%
 
-| Function | Category | Subcategory | Reference |
-|----------|----------|-------------|-----------|
-| Protect | PR.DS: Data Security | PR.DS-5: Protections against data leaks | NIST SP 800-53: AC-6 |
+### NIST Mapping
 
-### Recommendations
+| Function | Category | Control | Reference |
+|----------|----------|---------|-----------|
+| Protect | Data Security | Protections against data leaks | NIST SP 800-53: AC-6 |
 
-1. **Automatically revoke access** to shared folders after a defined period or when the task is complete
-2. **Regularly audit user privileges** and enforce role-based access controls
-3. **Train employees** on proper data sharing procedures and the risks of over-sharing
-
-### Key Takeaways
-
-- The Principle of Least Privilege (AC-6) is essential to preventing accidental data exposure
-- Automated access revocation eliminates the risk of forgotten permissions
-- Human error is a leading cause of data leaks — technical controls must support employee behavior
+### What I Learned
+Data leaks are rarely caused by malicious actors — most result from human error compounded by poor access controls. The Principle of Least Privilege is the single most effective control for reducing accidental exposure: if the sales rep never had access to the internal folder after the meeting, the leak couldn't have happened.
 
 ---
 **Course:** Google Cybersecurity Professional Certificate

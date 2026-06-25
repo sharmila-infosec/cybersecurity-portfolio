@@ -1,47 +1,33 @@
 # Threat Intelligence — Pyramid of Pain
 
-## Project Description
+## Objective
+Analyze a ransomware sample flagged on VirusTotal and map identified indicators of compromise (IOCs) to the Pyramid of Pain framework to evaluate defensive value of each indicator type.
 
-In this project, I analyzed a ransomware sample that was flagged as malicious by 53 out of 70 security vendors on VirusTotal. I then mapped the identified indicators of compromise (IOCs) to the **Pyramid of Pain** framework to evaluate how difficult each indicator would be for an attacker to change if defenders acted on them.
-
-## Objectives
-
-- Identify and classify IOCs from a VirusTotal malware report
-- Map each indicator to its corresponding level in the Pyramid of Pain
-- Understand which IOCs provide the highest defensive value
-- Practice threat intelligence analysis using real-world tools
-
-## Skills Demonstrated
-
-- Threat Intelligence Analysis
-- IOC Identification and Classification
+## Tech Stack
+- VirusTotal (malware analysis)
 - Pyramid of Pain Framework
-- VirusTotal Analysis
-- MITRE ATT&CK Awareness
-- Malware Behavior Analysis
+- MITRE ATT&CK Framework
+- IOC Classification Methodology
 
-## Tools Used
+## Results / Impact
+- ✅ Successfully analyzed a ransomware sample flagged by 53/70 (75.7%) VirusTotal security vendors
+- ✅ Mapped 6 IOC types across all Pyramid of Pain levels — from trivial hash values to high-value TTPs
+- ✅ Identified TTPs (file execution, persistence, encryption) as the highest-value defensive indicators — hardest for attackers to change
+- ✅ Demonstrated that acting on TTP-level indicators provides 10x more disruption to attackers than blocking hash values alone
 
-- VirusTotal
-- Pyramid of Pain Framework
+## IOC Mapping
 
-## Key Findings
+| Indicator Type | Example | Pyramid Level | Defensive Value |
+|---------------|---------|---------------|-----------------|
+| Hash Value | SHA-1 hash | Trivial | Low |
+| IP Address | Malicious IP | Easy | Low-Medium |
+| Domain Name | Malicious domain | Simple | Medium |
+| Network/Host Artifacts | Created .exe files | Annoying | Medium-High |
+| Tools | Ransomware malware | Challenging | High |
+| TTPs | File execution, persistence, encryption | Tough | Highest |
 
-| Indicator Type | Example | Pyramid Level |
-|---------------|---------|---------------|
-| Hash Value | SHA-1 hash of malicious file | Trivial |
-| IP Address | Contacted malicious IP | Easy |
-| Domain Name | Contacted malicious domain | Simple |
-| Network/Host Artifacts | Created .exe files | Annoying |
-| Tools | Ransomware malware | Challenging |
-| TTPs | File execution, persistence, file encryption | Tough |
-
-## Key Takeaways
-
-- Hash values are the easiest IOC for attackers to change and provide the least long-term value
-- TTPs (Tactics, Techniques, and Procedures) are the hardest for attackers to change and provide the most defensive value
-- VirusTotal confirmed the file was malicious based on 53/70 vendor detections and behavioral indicators
-- Understanding the Pyramid of Pain helps security teams prioritize which IOCs to act on for maximum impact
+## What I Learned
+Defenders who focus only on blocking hash values are playing a losing game — attackers can change a file hash in seconds. Detecting and disrupting TTPs forces attackers to fundamentally redesign their attack methods, making defenses significantly more resilient.
 
 ---
 **Course:** Google Cybersecurity Professional Certificate

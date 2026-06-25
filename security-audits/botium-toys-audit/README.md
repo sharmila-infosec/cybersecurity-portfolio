@@ -1,61 +1,40 @@
 # Botium Toys Internal Security Audit
 
-## Project Description
+## Objective
+Conduct a full internal security audit for a growing e-commerce company using the NIST CSF framework, identify critical compliance gaps, and deliver a prioritized remediation roadmap across PCI DSS, GDPR, and SOC standards.
 
-In this project, I conducted a full internal security audit for Botium Toys, a fictional toy company with a growing online presence and expanding U.S. and international operations. The audit followed the **NIST Cybersecurity Framework (CSF)** and assessed the company's controls and compliance posture against industry standards including **PCI DSS**, **GDPR**, and **SOC**.
-
-## Scenario
-
-Botium Toys' IT department was under pressure to ensure compliance with regulations governing online payments and business operations in the European Union. The IT manager initiated an internal audit to identify gaps in security controls and compliance before regulators or malicious actors could exploit them.
-
-## Audit Scope
-
-- Entire security program at Botium Toys
-- All assets including on-premise equipment, employee devices, storefront products, systems, and data
-- Controls assessment across administrative, technical, and physical categories
-- Compliance review against PCI DSS, GDPR, and SOC standards
-
-## Skills Demonstrated
-
-- Security Auditing
+## Tech Stack
 - NIST Cybersecurity Framework (CSF)
-- Controls Assessment
-- Risk Assessment
-- PCI DSS Compliance
-- GDPR Compliance
-- SOC Compliance
-- Audit Documentation and Reporting
+- PCI DSS Compliance Assessment
+- GDPR Compliance Review
+- SOC 1 & 2 Controls Evaluation
+- Controls Assessment Matrix
 
-## Frameworks Used
+## Results / Impact
+- ✅ Identified **3 critical compliance gaps** across PCI DSS, GDPR, and SOC frameworks
+- ✅ Flagged **8 missing security controls** including least privilege, MFA, IDS, encryption, and disaster recovery
+- ✅ Found that customer cardholder data was accessible to all employees — a direct PCI DSS violation
+- ✅ Identified absence of GDPR breach notification plan — a high legal/financial risk for EU operations
+- ✅ Delivered prioritized remediation roadmap: critical controls first → compliance gaps → physical security enhancements
+- ✅ Physical security controls (locks, CCTV, fire detection) confirmed adequate — no action needed
 
-| Framework | Purpose |
-|-----------|---------|
-| NIST CSF | Overall security posture evaluation |
-| PCI DSS | Payment card data security compliance |
-| GDPR | EU customer data privacy compliance |
-| SOC 1 & 2 | User data access and confidentiality controls |
+## Critical Gaps Found
 
-## Key Findings
+| Gap | Framework Violated | Risk Level |
+|-----|-------------------|------------|
+| No encryption for cardholder data | PCI DSS | Critical |
+| All employees can access sensitive data | PCI DSS / Least Privilege | Critical |
+| No GDPR breach notification plan | GDPR | Critical |
+| No IDS deployed | NIST CSF | High |
+| No disaster recovery plan | SOC / Business Continuity | High |
+| No password policy enforced | NIST CSF | High |
+| No separation of duties | SOC | Medium |
+| Legacy systems unmanaged | NIST CSF | Medium |
 
-- **Missing controls:** Least privilege, separation of duties, disaster recovery plans, password policies, IDS, legacy system management, and encryption
-- **Compliance gaps:** PCI DSS violations (no encryption, open access to cardholder data), GDPR gaps (no data classification or breach notification plan)
-- **Physical controls:** Adequate locks, CCTV, and fire detection in place
-
-## Recommendations
-
-- Implement least privilege and separation of duties immediately
-- Develop and test a formal disaster recovery and business continuity plan
-- Deploy an Intrusion Detection System (IDS)
-- Enforce a strong password policy and centralized password management
-- Encrypt sensitive customer and payment card data
-- Establish a data classification and retention policy to meet GDPR requirements
-
-## Key Takeaways
-
-- Security audits reveal gaps that may not be visible in day-to-day operations
-- Compliance with PCI DSS and GDPR is essential for any company handling payment or EU customer data
-- The NIST CSF provides a practical, structured approach to assessing and improving an organization's security posture
+## What I Learned
+Security audits reveal risks that are invisible in day-to-day operations. Organizations often assume compliance because nothing has gone wrong yet — but a single unencrypted data breach or GDPR violation can cost millions. The NIST CSF provides a structured, repeatable approach to identifying these gaps before attackers or regulators find them first.
 
 ---
 **Course:** Google Cybersecurity Professional Certificate
 **Domain:** Security Auditing & Compliance
+**Frameworks:** NIST CSF | PCI DSS | GDPR | SOC

@@ -1,79 +1,72 @@
 # Risk Management
 
-This folder contains two risk management projects completed as part of the Google Cybersecurity Professional Certificate. Both projects apply structured frameworks to identify, assess, and prioritize security risks.
+This folder contains two risk management projects applying structured frameworks to identify, assess, and prioritize security risks.
 
 ---
 
 ## 📄 Project 1: Risk Register
 
-### Project Description
+### Objective
+Build a prioritized risk register for a banking environment to help security teams focus remediation efforts on the highest-impact threats.
 
-In this project, I built a risk register for a fictional coastal bank operating with 100 on-premise and 20 remote employees, serving 2,000+ individual and 200 commercial accounts. I identified key assets, described potential threats, and scored each risk by likelihood and severity to calculate a priority score.
+### Tech Stack
+- Risk Scoring Matrix (Likelihood × Severity)
+- Asset-Based Risk Assessment
+- Financial Sector Threat Modeling
 
-### Skills Demonstrated
+### Results / Impact
+- ✅ Identified and scored 5 key risks across a banking environment with 120 employees and 2,200+ accounts
+- ✅ Flagged Business Email Compromise (BEC) as the highest-priority risk (score: 9/9) due to high likelihood and catastrophic financial impact
+- ✅ Identified 2 medium-priority data security risks (score: 6/9) — poorly encrypted customer database and publicly accessible backup server
+- ✅ Prioritized remediation roadmap: BEC controls → encryption → access controls → physical security
 
-- Risk Assessment
-- Risk Register Creation
-- Likelihood and Severity Scoring
-- Asset Identification
-- Threat Analysis
-- Financial Sector Security Awareness
+### Risk Scoring Summary
 
-### Risk Scoring Formula
+| Asset | Risk | Priority Score |
+|-------|------|---------------|
+| Funds | Business Email Compromise | 9 (Critical) |
+| User Database | Poor encryption | 6 (Medium) |
+| Financial Records | Exposed backup server | 6 (Medium) |
+| Bank Safe | Left unlocked | 2 (Low) |
+| Supply Chain | Natural disaster | 2 (Low) |
 
-**Priority = Likelihood × Severity** (each scored 1–3)
-
-### Key Risks Identified
-
-| Asset | Risk | Likelihood | Severity | Priority |
-|-------|------|-----------|----------|----------|
-| Funds | Business Email Compromise (BEC) | 3 | 3 | 9 (High) |
-| User Database | Poorly encrypted customer data | 2 | 3 | 6 (Medium) |
-| Financial Records | Publicly accessible backup server | 2 | 3 | 6 (Medium) |
-| Bank Safe | Left unlocked | 1 | 2 | 2 (Low) |
-| Supply Chain | Natural disaster disruption | 1 | 2 | 2 (Low) |
-
-### Key Takeaways
-
-- Business Email Compromise posed the highest risk due to high likelihood and catastrophic impact
-- Encryption gaps and exposed backup servers represent significant data security risks
-- Risk registers help organizations prioritize remediation based on impact vs. likelihood
+### What I Learned
+Risk registers force security teams to move beyond gut feelings and apply objective scoring. Quantifying risk by likelihood × severity ensures the most dangerous threats get addressed first — preventing alert fatigue from low-priority issues consuming limited security resources.
 
 ---
 
 ## 📄 Project 2: PASTA Threat Model Worksheet
 
-### Project Description
+### Objective
+Apply the PASTA (Process for Attack Simulation and Threat Analysis) framework to a mobile application to identify threats, model attack paths, and recommend mitigations before deployment.
 
-In this project, I applied the **PASTA (Process for Attack Simulation and Threat Analysis)** framework to a fictional sneaker marketplace mobile application. I worked through all seven PASTA stages to identify business objectives, technical scope, threats, vulnerabilities, and risk mitigations.
-
-### Skills Demonstrated
-
-- Threat Modeling (PASTA Framework)
-- Application Security Analysis
-- SQL Injection Identification
+### Tech Stack
+- PASTA Threat Modeling Framework (7 stages)
+- SQL Injection Analysis
 - Authentication Vulnerability Assessment
-- Risk Mitigation Planning
-- Principle of Least Privilege (PoLP)
-- Multi-Factor Authentication (MFA)
+- Mobile Application Security (API security focus)
 
-### PASTA Stages Summary
+### Results / Impact
+- ✅ Completed all 7 PASTA stages for a sneaker marketplace mobile application
+- ✅ Identified the API layer as the highest-risk component — handles all user-database communication
+- ✅ Modeled 5 attack vectors including SQL injection and credential theft
+- ✅ Recommended 4 mitigations: MFA, Principle of Least Privilege, AES/TLS encryption, and regular security audits
+- ✅ Reduced projected attack surface by recommending input validation controls to block SQL injection at source
 
-| Stage | Summary |
-|-------|---------|
-| I. Business Objectives | Secure mobile app for buying/selling sneakers; protect customer data and payments |
-| II. Technical Scope | Prioritized API security due to high-risk communication between app, users, and database |
-| III. Application Decomposition | Mapped login flow: user → API → SQL database with encrypted connections |
-| IV. Threat Analysis | Identified SQL injection attacks and phishing/credential theft as key threats |
-| V. Vulnerability Analysis | Weak input validation and poor authentication/password management |
-| VI. Attack Modeling | Mapped attack paths via attack tree diagram |
-| VII. Risk & Impact | Recommended MFA, Least Privilege, AES/TLS encryption, and regular security audits |
+### PASTA Stages Completed
 
-### Key Takeaways
+| Stage | Key Output |
+|-------|-----------|
+| Business Objectives | Secure checkout, user privacy, reliable payments |
+| Technical Scope | API identified as highest-risk component |
+| App Decomposition | Login flow mapped: user → API → SQL database |
+| Threat Analysis | SQL injection + credential theft identified |
+| Vulnerability Analysis | Weak input validation + poor authentication |
+| Attack Modeling | Attack tree diagram completed |
+| Risk & Impact | MFA + PoLP + AES/TLS + audits recommended |
 
-- The API layer was identified as the highest-risk component due to its role in all data communication
-- SQL injection and credential theft were the top threats for this application
-- Defense-in-depth controls (MFA, encryption, least privilege, audits) significantly reduce risk exposure
+### What I Learned
+Threat modeling before deployment is far cheaper than remediating breaches after. The PASTA framework's business-first approach ensures security recommendations are practical and aligned with real organizational priorities — not just theoretical security ideals.
 
 ---
 **Course:** Google Cybersecurity Professional Certificate
